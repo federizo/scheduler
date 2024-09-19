@@ -71,7 +71,6 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-
 // function NavBar() {
 //   const style = {
 //     color: "black",
@@ -211,16 +210,16 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 // export default NavBar;
 
 export default function navbar() {
-   const navigation = [
-  { name: 'Home', href: '/home', current: true },
-  { name: 'School', href: '/school', current: false },
-  { name: 'Scheduler', href: '/scheduler', current: false },
-  { name: 'Schedules', href: 'schedules', current: false },
-]
+  const navigation = [
+    { name: "Home", href: "/home", current: true },
+    { name: "School", href: "/school", current: false },
+    { name: "Scheduler", href: "/scheduler", current: false },
+    { name: "Schedules", href: "schedules", current: false },
+  ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
 
   return (
     <Disclosure as="nav" className="bg-gray-800">
@@ -231,8 +230,14 @@ function classNames(...classes) {
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
-              <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" />
+              <Bars3Icon
+                aria-hidden="true"
+                className="block h-6 w-6 group-data-[open]:hidden"
+              />
+              <XMarkIcon
+                aria-hidden="true"
+                className="hidden h-6 w-6 group-data-[open]:block"
+              />
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-start justify-start sm:items-stretch sm:justify-start">
@@ -249,10 +254,12 @@ function classNames(...classes) {
                   <a
                     key={item.name}
                     href={item.href}
-                    aria-current={item.current ? 'page' : undefined}
+                    aria-current={item.current ? "page" : undefined}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                      'rounded-md px-3 py-2 text-sm font-medium',
+                      item.current
+                        ? "bg-gray-900 text-white"
+                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      "rounded-md px-3 py-2 text-sm font-medium"
                     )}
                   >
                     {item.name}
@@ -289,22 +296,34 @@ function classNames(...classes) {
                 className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
               >
                 <MenuItem>
-                  <a href="/user/profile" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                  <a
+                    href="/user/profile"
+                    className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
+                  >
                     Your Profile
                   </a>
                 </MenuItem>
                 <MenuItem>
-                  <a href="/settings" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                  <a
+                    href="/settings"
+                    className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
+                  >
                     Settings
                   </a>
                 </MenuItem>
                 <MenuItem>
-                  <a href="/settings" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                  <a
+                    href="/settings"
+                    className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
+                  >
                     Support
                   </a>
                 </MenuItem>
                 <MenuItem>
-                  <a href="/" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                  <a
+                    href="/"
+                    className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
+                  >
                     Sign out
                   </a>
                 </MenuItem>
@@ -321,10 +340,12 @@ function classNames(...classes) {
               key={item.name}
               as="a"
               href={item.href}
-              aria-current={item.current ? 'page' : undefined}
+              aria-current={item.current ? "page" : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                'block rounded-md px-3 py-2 text-base font-medium',
+                item.current
+                  ? "bg-gray-900 text-white"
+                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                "block rounded-md px-3 py-2 text-base font-medium"
               )}
             >
               {item.name}
@@ -333,5 +354,5 @@ function classNames(...classes) {
         </div>
       </DisclosurePanel>
     </Disclosure>
-  )
+  );
 }
