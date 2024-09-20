@@ -25,7 +25,7 @@ import {
 } from "@/components/ui/alert-dialog";
 
 
-export default function DialogDemo() {
+export default function Schedules() {
   return (
     <div className="w-screen h-screen grid-flow-row ">
       <NavBar />{" "}
