@@ -71,20 +71,22 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Calendar } from "@/components/ui/calendar"
 
 
 const SHEET_SIDES = ["top", "right", "bottom", "left"] as const;
 type SheetSide = (typeof SHEET_SIDES)[number];
 
 export function SheetSide() {
-  
+  const [date, setDate] = React.useState<Date | undefined>(new Date());
+
 
   return (
     <div className="h-screen w-screen">
       <NavBar />
 
       <div className="grid grid-cols-2 gap-2">
-        {SHEET_SIDES.map((side) => (
+        {/* {SHEET_SIDES.map((side) => (
           <Sheet key={side}>
             <SheetTrigger asChild>
               <Button variant="outline">{side}</Button>
@@ -126,7 +128,13 @@ export function SheetSide() {
               </SheetFooter>
             </SheetContent>
           </Sheet>
-        ))}
+        ))} */}
+        <Calendar
+          mode="single"
+          selected={date}
+          onSelect={setDate}
+          className="rounded-md border"
+        />
       </div>
     </div>
   );
