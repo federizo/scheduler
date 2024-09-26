@@ -71,149 +71,12 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-// function NavBar() {
-//   const style = {
-//     color: "black",
-//     backgroundColor: "cyan",
-//     padding: "10px",
-//     borderStyle: "solid",
-//     display: "flex",
-//   };
-
-//   return (
-//     <div style={style}>
-//       <Link
-//         style={{
-//           color: "black",
-//           backgroundColor: "cyan",
-//           padding: "10px",
-//           marginLeft: "10px",
-//           fontFamily: "sans-serif",
-//           fontSize: "calc(2px + 2vmin)",
-//           border: "none",
-//         }}
-//         to="/home"
-//       >
-//         Home
-//       </Link>
-//       <Link
-//         style={{
-//           color: "black",
-//           backgroundColor: "cyan",
-//           padding: "10px",
-//           marginLeft: "10px",
-//           fontFamily: "sans-serif",
-//           fontSize: "calc(2px + 2vmin)",
-//           border: "none",
-//         }}
-//         to="/school"
-//       >
-//         School
-//       </Link>
-
-//       <Link
-//         style={{
-//           color: "black",
-//           backgroundColor: "cyan",
-//           padding: "10px",
-//           marginLeft: "10px",
-//           fontFamily: "sans-serif",
-//           fontSize: "calc(2px + 2vmin)",
-//           border: "none",
-//         }}
-//         to="/scheduler"
-//       >
-//         Scheduler
-//       </Link>
-//       <Link
-//         style={{
-//           color: "black",
-//           backgroundColor: "cyan",
-//           padding: "10px",
-//           marginLeft: "10px",
-//           fontFamily: "sans-serif",
-//           fontSize: "calc(2px + 2vmin)",
-//           border: "none",
-//         }}
-//         to="/schedules"
-//       >
-//         Schedules
-//       </Link>
-//       <div className="w-full h-full flex items-center justify-end  flex-1">
-//         <div className="">
-//           <DropdownMenu>
-//             <DropdownMenuTrigger>
-//               <Avatar>
-//                 <AvatarImage src="https://github.com/shadcn.png" />
-//                 <AvatarFallback></AvatarFallback>
-//               </Avatar>
-//             </DropdownMenuTrigger>
-//             <DropdownMenuContent>
-//               <DropdownMenuLabel>
-//                 <HoverCard>
-//                   <HoverCardTrigger>
-//                     <Button variant="ghost">
-//                       <Link to="/user/profile">My Account</Link>
-//                     </Button>
-//                   </HoverCardTrigger>
-//                 </HoverCard>
-//               </DropdownMenuLabel>
-//               <DropdownMenuSeparator />
-//               <DropdownMenuItem>
-//                 <HoverCard>
-//                   <HoverCardTrigger>
-//                     <Button variant="ghost" className="text-black">
-//                       <Link to="/settings">Settings</Link>
-//                     </Button>
-//                   </HoverCardTrigger>
-//                 </HoverCard>
-//               </DropdownMenuItem>
-//               <DropdownMenuItem>
-//                 <HoverCard>
-//                   <HoverCardTrigger>
-//                     <Dialog>
-//                       <Button variant="ghost" className="text-black">
-//                         Support
-//                       </Button>
-//                       <DialogContent>
-//                         <DialogHeader>
-//                           <DialogTitle>Are you absolutely sure?</DialogTitle>
-//                           <DialogDescription>
-//                             This action cannot be undone. This will permanently
-//                             delete your account and remove your data from our
-//                             servers.
-//                           </DialogDescription>
-//                         </DialogHeader>
-//                       </DialogContent>
-//                     </Dialog>
-//                   </HoverCardTrigger>
-//                 </HoverCard>
-//               </DropdownMenuItem>
-//               <DropdownMenuItem>Team</DropdownMenuItem>
-//               <DropdownMenuItem>
-//                 <HoverCard>
-//                   <HoverCardTrigger>
-//                     <Button variant="ghost" className="text-black">
-//                       <Link to="/">Logout</Link>
-//                     </Button>
-//                   </HoverCardTrigger>
-//                 </HoverCard>
-//               </DropdownMenuItem>
-//             </DropdownMenuContent>
-//           </DropdownMenu>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default NavBar;
-
-export default function navbar() {
+export default function NavBar() {
   const navigation = [
     { name: "Home", href: "/home", current: true },
     { name: "Scheduler", href: "/scheduler", current: false },
-    { name: "Schedules", href: "schedules", current: false },
+    { name: "Schedules", href: "/schedules", current: false },
+    { name: "Teachers", href: "/teachers", current: false },
   ];
 
   function classNames(...classes) {
@@ -243,7 +106,7 @@ export default function navbar() {
             <div className="flex flex-shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="/src/assets/polylogo.png"
+                src="/src/assets/gv.png"
                 className="h-8 w-auto"
               />
             </div>

@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Login from "../userLayout/landingPage/login";
 import Success from "../userLayout/successPage/successPage";
-
+import Teacher from "../userLayout/teachers/teachers"
 import NavBar from "../userLayout/navbar/navbar";
 import Scheduler from "../userLayout/scheduler/scheduler";
 import Schedules from "../userLayout/schedules/schedules";
@@ -18,6 +18,7 @@ const userRoutes = () => {
       <Route path="/schedules" element={<Schedules />} />
       <Route path="/user/:profile" element={<AccountSettings />} />
       <Route path="/settings" element={<Settings />} />
+      <Route path="/teachers" element={<Teacher />} />
     </Routes>
   );
 };
