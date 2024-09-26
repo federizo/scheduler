@@ -1,12 +1,11 @@
-import Layout from "./FrontEnd/userLayout/layout";
+import Layout from "./hooks/userLayout/layout";
 
-
-function App  ()  {
+function App() {
   return (
     <div className="">
-      <Layout/>
+      <Layout />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
