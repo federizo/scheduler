@@ -1,3 +1,4 @@
+
 import NavBar from '../navbar/navbar'
 
 const Settings = () => {

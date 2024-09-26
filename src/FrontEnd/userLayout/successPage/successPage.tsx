@@ -1,13 +1,15 @@
 
+
 // import NavBarScheduler from "../NavBarScheduler/NavBarScheduler";
 // import { useNavigate } from "react-router-dom";
 // import { useState } from "react";
 // import Modal from "../../Components/modal"
-;
+
 // import Navbar from "../navbar/navbar";
 
 
 import NavBar from "../navbar/navbar";
+
 
 
 
