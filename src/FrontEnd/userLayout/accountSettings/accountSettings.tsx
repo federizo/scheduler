@@ -1,6 +1,6 @@
 
 // import { useParams } from "react-router-dom";
-import NavBar from "../navbar/navbar";
+import NavBar from "@/FrontEnd/userLayout/navbar/navbar";
 
 export default function AccountSettings() {
   // const { profile } = useParams();

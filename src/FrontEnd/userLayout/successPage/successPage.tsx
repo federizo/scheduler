@@ -8,7 +8,7 @@
 // import Navbar from "../navbar/navbar";
 
 
-import NavBar from "../navbar/navbar";
+import NavBar from "@/FrontEnd/userLayout/navbar/navbar";
 
 
 

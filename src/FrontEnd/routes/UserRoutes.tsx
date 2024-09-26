@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import Login from "@/pages/landingPage/login";
-import Success from "@/pages/successPage/successPage";
-import Teacher from "@/pages/teachers/teachers"
-import NavBar from "@/pages/navbar/navbar";
-import Scheduler from "@/pages/scheduler/scheduler";
-import Schedules from "@/pages/schedules/schedules";
-import AccountSettings from "@/pages/accountSettings/accountSettings";
-import Settings from "@/pages/settings/settings";
+import Login from "@/FrontEnd/userLayout/landingPage/login";
+import Success from "@/FrontEnd/userLayout/successPage/successPage";
+import Teacher from "@/FrontEnd/userLayout/teachers/teachers"
+import NavBar from "@/FrontEnd/userLayout/navbar/navbar";
+import Scheduler from "@/FrontEnd/userLayout/scheduler/scheduler";
+import Schedules from "@/FrontEnd/userLayout/schedules/schedules";
+import AccountSettings from "@/FrontEnd/userLayout/accountSettings/accountSettings";
+import Settings from "@/FrontEnd/userLayout/settings/settings";
 
 const userRoutes = () => {
   return (

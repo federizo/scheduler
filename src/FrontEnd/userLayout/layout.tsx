@@ -1,4 +1,4 @@
-import UserRoutes from "@/pages/routes/UserRoutes";
+import UserRoutes from "../routes/UserRoutes";
 
 function Layout() {
   return (
