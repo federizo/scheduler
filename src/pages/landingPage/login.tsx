@@ -3,7 +3,7 @@ import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { useNavigate } from "react-router-dom";
 
-import gv from "../../../assets/gv.png";
+import gv from "@/assets/gv.png";
 
 
 const supabaseUrl = import.meta.env.VITE_APP_URL;
