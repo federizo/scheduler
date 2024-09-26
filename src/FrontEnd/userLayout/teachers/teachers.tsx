@@ -1,5 +1,3 @@
-import React, {useState, useEffect}from "react";
-import supabase from "@supabase/supabase-js";
 import NavBar from "../navbar/navbar";
 import {
   Table,

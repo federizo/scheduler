@@ -1,84 +1,22 @@
-import FullCalendar from "@fullcalendar/react";
-import React from "react";
-import dayGridPlugin from "@fullcalendar/daygrid";
-import timeGridPlugin from "@fullcalendar/timegrid";
-import interactionPlugin from "@fullcalendar/interaction";
+// import React from "react";
 
 // import NavBarScheduler from "../NavBarScheduler/NavBarScheduler";
 // import { useNavigate } from "react-router-dom";
 // import { useState } from "react";
 // import Modal from "../../Components/modal"
-import {
-  EventApi,
-  DateSelectArg,
-  EventClickArg,
-  EventContentArg,
-  formatDate,
-} from "@fullcalendar/core";
-import { INITIAL_EVENTS, createEventId } from "../scheduler/event-utils";
+
 // import Navbar from "../navbar/navbar";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+
 
 import NavBar from "../navbar/navbar";
-import {
-  Cloud,
-  CreditCard,
-  Github,
-  Keyboard,
-  LifeBuoy,
-  LogOut,
-  Mail,
-  MessageSquare,
-  Plus,
-  PlusCircle,
-  Settings,
-  User,
-  UserPlus,
-  Users,
-} from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Calendar } from "@/components/ui/calendar"
 
 
 const SHEET_SIDES = ["top", "right", "bottom", "left"] as const;
 type SheetSide = (typeof SHEET_SIDES)[number];
 
 export function SheetSide() {
-  const [date, setDate] = React.useState<Date | undefined>(new Date());
+  // const [date, setDate] = React.useState<Date | undefined>(new Date());
 
 
   return (

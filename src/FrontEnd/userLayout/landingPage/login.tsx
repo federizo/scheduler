@@ -2,7 +2,6 @@ import { createClient } from "@supabase/supabase-js";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { useNavigate } from "react-router-dom";
-import polylogo from "../../../assets/polylogo.png";
 import gv from "../../../assets/gv.png"
 
 const supabaseUrl = import.meta.env.VITE_APP_URL;

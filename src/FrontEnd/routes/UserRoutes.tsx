@@ -11,7 +11,7 @@ import Settings from "../userLayout/settings/settings";
 const userRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/home" element={<Success />} />
       <Route path="/scheduler" element={<Scheduler />} />
       <Route path="/scheduler" element={<NavBar />} />
