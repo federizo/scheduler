@@ -13,7 +13,23 @@ const userRoutes = () => {
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/home" element={<Success />} />
-      <Route path="/scheduler" element={<Scheduler />} />
+      <Route
+        path="/scheduler"
+        element={
+          <Scheduler
+            openRight={false}
+            openLeft={false}
+            showEventModal={false}
+            weekendsVisible={true}
+            currentEvents={[]}
+            selectedEvent={null}
+            openDateSelectModal={false}
+            selectedStartDate={null}
+            selectedEndDate={null}
+            eventTitleInput=""
+          />
+        }
+      />
       <Route path="/scheduler" element={<NavBar />} />
       <Route path="/schedules" element={<Schedules />} />
       <Route path="/user/:profile" element={<AccountSettings />} />

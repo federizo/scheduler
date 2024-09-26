@@ -1,64 +1,4 @@
 // import { RiFontFamily } from "react-icons/ri";
-import { Link } from "react-router-dom";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import {
-  Cloud,
-  CreditCard,
-  Github,
-  Keyboard,
-  LifeBuoy,
-  LogOut,
-  Mail,
-  MessageSquare,
-  Plus,
-  PlusCircle,
-  Settings,
-  User,
-  UserPlus,
-  Users,
-} from "lucide-react";
-
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
-import profile from "../../../assets/profile.jpg";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 
 import {
   Disclosure,
@@ -79,7 +19,7 @@ export default function NavBar() {
     { name: "Teachers", href: "/teachers", current: false },
   ];
 
-  function classNames(...classes) {
+  function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
   }
 

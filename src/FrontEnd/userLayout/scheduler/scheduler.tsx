@@ -1,12 +1,10 @@
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
+  
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/components/ui/dialog";
 // import { Input } from "@/components/ui/input";
 // import { Label } from "@/components/ui/label";
@@ -24,27 +22,13 @@ import {
   formatDate,
 } from "@fullcalendar/core";
 import { INITIAL_EVENTS, createEventId } from "./event-utils";
-import { toast } from "sonner";
 
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
+  
 } from "@/components/ui/sheet";
-import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+
 import React, { createRef } from "react";
 
 interface SuccessPageProps {
