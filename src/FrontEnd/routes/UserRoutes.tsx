@@ -30,7 +30,7 @@ const userRoutes = () => {
           />
         }
       />
-      <Route path="/scheduler" element={<NavBar />} />
+      <Route path="/src/FrontEnd/userLayout/navbar/navbar" element={<NavBar />} />
       <Route path="/schedules" element={<Schedules />} />
       <Route path="/user/:profile" element={<AccountSettings />} />
       <Route path="/settings" element={<Settings />} />
